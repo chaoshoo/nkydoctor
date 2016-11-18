@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/item"
+    android:layout_margin="20dp"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/remote_item_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:text="预约医生：程医生\n预约时间：2016/08/26 17:00:00"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/remote_item_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:text="预约备注：\n点击否还好的失事客机灰色空间地方还记得发货快收到货副书记等符合会计师的疯狂"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/remote_item_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:text="状态："/>
+
+
+</LinearLayout>

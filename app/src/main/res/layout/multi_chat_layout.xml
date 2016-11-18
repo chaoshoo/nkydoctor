@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/preview_holder_0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:visibility="invisible"
+                app:cardCornerRadius="5dp">
+
+                <include layout="@layout/render" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/preview_holder_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:visibility="invisible"
+                app:cardCornerRadius="5dp">
+
+                <include layout="@layout/render" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/preview_holder_2"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:clickable="true"-->
+            <!--android:visibility="invisible"-->
+            <!--app:cardCornerRadius="5dp">-->
+
+            <!--<include layout="@layout/render" />-->
+
+
+            <!--</android.support.v7.widget.CardView>-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal">-->
+
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/preview_holder_3"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:clickable="true"-->
+            <!--android:visibility="invisible"-->
+            <!--app:cardCornerRadius="5dp">-->
+
+            <!--<include layout="@layout/render" />-->
+
+
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/preview_holder_4"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:clickable="true"-->
+            <!--android:visibility="invisible"-->
+            <!--app:cardCornerRadius="5dp">-->
+
+            <!--<include layout="@layout/render" />-->
+
+
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/preview_holder_5"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:clickable="true"-->
+            <!--android:visibility="invisible"-->
+            <!--app:cardCornerRadius="5dp">-->
+
+            <!--<include layout="@layout/render" />-->
+
+
+            <!--</android.support.v7.widget.CardView>-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal">-->
+
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/preview_holder_6"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:clickable="true"-->
+            <!--android:visibility="invisible"-->
+            <!--app:cardCornerRadius="5dp">-->
+
+            <!--<include layout="@layout/render" />-->
+
+
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/preview_holder_7"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:clickable="true"-->
+            <!--android:visibility="invisible"-->
+            <!--app:cardCornerRadius="5dp">-->
+
+            <!--<include layout="@layout/render" />-->
+
+
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/preview_holder_8"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:clickable="true"-->
+            <!--android:visibility="invisible"-->
+            <!--app:cardCornerRadius="5dp">-->
+
+            <!--<include layout="@layout/render" />-->
+
+
+            <!--</android.support.v7.widget.CardView>-->
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="left|bottom"
+            android:padding="3dp"
+            android:textSize="10sp"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            android:layout_weight="2"
+            android:visibility="gone"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/live"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:layout_margin="1px"
+                android:background="@drawable/chat_button"
+                android:text="直播"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/settings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:layout_margin="1px"
+                android:background="@drawable/chat_button"
+                android:text="设置"
+                android:nextFocusRight="@+id/switch_speaker"
+                android:focusable="true"
+                />
+
+            <Button
+                android:id="@+id/switch_speaker"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:layout_margin="1px"
+                android:background="@drawable/chat_button"
+                android:text="关声音"
+                android:nextFocusRight="@+id/switch_microphone"
+                android:nextFocusLeft="@+id/settings"
+                android:focusable="true"/>
+
+            <Button
+                android:id="@+id/switch_microphone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:layout_margin="1px"
+                android:background="@drawable/chat_button"
+                android:text="关麦"
+                android:nextFocusRight="@+id/back"
+                android:nextFocusLeft="@+id/switch_speaker"
+                android:focusable="true"/>
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:layout_margin="1px"
+                android:background="@drawable/chat_button"
+                android:text="退出"
+                android:nextFocusLeft="@+id/switch_microphone"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
