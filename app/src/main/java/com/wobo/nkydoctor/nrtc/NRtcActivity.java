@@ -90,7 +90,7 @@ public class NRtcActivity extends AppCompatActivity {
             networkProxy.scheme = NRtcNetworkProxy.SOCKS5;
             if (TextUtils.isEmpty(host) || TextUtils.isEmpty(port) || !port.matches("[0-9]+")) {
                 preferences.edit().putBoolean(getString(R.string.setting_net_proxy_key), false).apply();
-                Toast.makeText(this, "host or port is wrong，无法启用代理", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "host or port is wrong，Unable to enable proxy", Toast.LENGTH_SHORT).show();
                 return;
             }
             networkProxy.host = host;

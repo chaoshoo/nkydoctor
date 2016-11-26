@@ -217,7 +217,7 @@
                 android:textSize="10sp"
                 android:layout_margin="1px"
                 android:background="@drawable/chat_button"
-                android:text="直播"
+                android:text="direct seeding"
                 android:visibility="gone"/>
 
             <Button
@@ -228,7 +228,7 @@
                 android:textSize="24sp"
                 android:layout_margin="1px"
                 android:background="@drawable/chat_button"
-                android:text="设置"
+                android:text="Set up"
                 android:nextFocusRight="@+id/switch_speaker"
                 android:focusable="true"
                 />
@@ -241,7 +241,7 @@
                 android:textSize="24sp"
                 android:layout_margin="1px"
                 android:background="@drawable/chat_button"
-                android:text="关声音"
+                android:text="Mute"
                 android:nextFocusRight="@+id/switch_microphone"
                 android:nextFocusLeft="@+id/settings"
                 android:focusable="true"/>
@@ -254,7 +254,7 @@
                 android:textSize="24sp"
                 android:layout_margin="1px"
                 android:background="@drawable/chat_button"
-                android:text="关麦"
+                android:text="Voice off"
                 android:nextFocusRight="@+id/back"
                 android:nextFocusLeft="@+id/switch_speaker"
                 android:focusable="true"/>
@@ -267,7 +267,7 @@
                 android:textSize="24sp"
                 android:layout_margin="1px"
                 android:background="@drawable/chat_button"
-                android:text="退出"
+                android:text="Sign out"
                 android:nextFocusLeft="@+id/switch_microphone"
                 android:focusable="true"/>
 

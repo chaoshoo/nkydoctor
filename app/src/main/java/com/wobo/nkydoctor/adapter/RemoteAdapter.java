@@ -31,25 +31,25 @@ public class RemoteAdapter extends RecyclerView.Adapter<RemoteAdapter.MyViewHold
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         Remote remote = mRemoteList.get(position);
-        holder.doctor.setText("预约用户：" + remote.getReal_name()+ "\n预约时间：" + remote.getOrder_time());
-        holder.remark.setText("预约备注：\n" + remote.getRemark());
+        holder.doctor.setText("Reservation clilent：" + remote.getReal_name()+ "\nAppointment time：" + remote.getOrder_time());
+        holder.remark.setText("Appointment notes：\n" + remote.getRemark());
         String isZd = remote.getIszd();
         if ("1".equals(isZd)) {
-            isZd = "已应答";
+            isZd = "Answered";
         } else if ("2".equals(isZd)) {
-            isZd = "已拒绝";
+            isZd = "Refused";
         } else {
-            isZd = "未处理";
+            isZd = "Untreated";
         }
         String isDeal = remote.getIsdeal();
         if ("1".equals(isDeal)) {
-            isDeal = "已视频";
+            isDeal = "Chatted";
         } else if ("2".equals(isDeal)) {
-            isDeal = "已拒绝";
+            isDeal = "Refused";
         } else {
-            isDeal = "未处理";
+            isDeal = "Untreated";
         }
-        holder.status.setText("应诊状态：" + isZd + "\n视频状态：" + isDeal);
+        holder.status.setText("Visit status：" + isZd + "\nVideo status：" + isDeal);
     }
 
     @Override

@@ -72,7 +72,7 @@ public class InitActivity extends Activity {
         mProgressBar = (ProgressBar) findViewById(R.id.init_loading);
 
         if (!NetworkUtil.isHaveNet(this)) {
-            ToastUtil.show(this, "当前网络不可用");
+            ToastUtil.show(this, "Network is not available");
             finish();
             return;
         }
@@ -110,7 +110,7 @@ public class InitActivity extends Activity {
                     public void run() {
                         String msg = e.getMessage();
                         if (msg.startsWith("Failed")) {
-                            msg = "无法连接服务器，请检查网络";
+                            msg = "Unable to connect to the server，Please check the network";
                         }
                         ToastUtil.show(InitActivity.this, msg);
                     }
@@ -152,11 +152,11 @@ public class InitActivity extends Activity {
             switch (msg.what) {
                 case 1:
                     int progress = msg.arg1;
-                    ToastUtil.show(InitActivity.this,"下载进度:" + progress + "%");
+                    ToastUtil.show(InitActivity.this,"Download progress:" + progress + "%");
                     break;
                 case 2:
                     String apkPath = (String) msg.obj;
-                    ToastUtil.show(InitActivity.this,"下载完成，进行安装");
+                    ToastUtil.show(InitActivity.this,"Download completed，To install");
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setDataAndType(Uri.fromFile(new File(apkPath)),"application/vnd.android.package-archive");
                     startActivity(intent);
@@ -175,7 +175,7 @@ public class InitActivity extends Activity {
             public void onFailure(Call call, IOException e) {
                 String msg = e.getMessage();
                 if (msg.startsWith("Failed")) {
-                    msg = "无法连接服务器，请检查网络";
+                    msg = "Unable to connect to the server，Please check the network";
                 }
                 ToastUtil.show(InitActivity.this, msg);
             }
@@ -197,7 +197,7 @@ public class InitActivity extends Activity {
                                 runOnUiThread(new Runnable() {
                                     @Override
                                     public void run() {
-                                        ToastUtil.show(InitActivity.this, "发现新版");
+                                        ToastUtil.show(InitActivity.this, "Discover new");
                                     }
                                 });
                                 update(version_url);
@@ -236,7 +236,7 @@ public class InitActivity extends Activity {
                     public void run() {
                         String msg = e.getMessage();
                         if (msg.startsWith("Failed")) {
-                            msg = "无法连接服务器，请检查网络";
+                            msg = "Unable to connect to the server，Please check the network";
                         }
                         ToastUtil.show(InitActivity.this, msg);
                     }

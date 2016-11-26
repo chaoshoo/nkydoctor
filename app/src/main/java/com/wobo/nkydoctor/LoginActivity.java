@@ -71,7 +71,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (NRtc.checkPermission(this).size() == 0) {
                     login(mAccountStr,mPasswordStr);
                 } else {
-                    Toast.makeText(LoginActivity.this, "有些权限没有打开", Toast.LENGTH_SHORT)
+                    Toast.makeText(LoginActivity.this, "Some permissions are not open", Toast.LENGTH_SHORT)
                             .show();
                 }
                 break;
@@ -93,15 +93,15 @@ public class LoginActivity extends AppCompatActivity {
 
             if (showRationale.size() > 0) {
                 new AlertDialog.Builder(LoginActivity.this)
-                        .setMessage("您必须同意此项权限的使用")
-                        .setPositiveButton("同意", new DialogInterface.OnClickListener() {
+                        .setMessage("You must allow to use this permission.")
+                        .setPositiveButton("Agree！", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 ActivityCompat.requestPermissions(LoginActivity.this, missed.toArray(new String[missed.size()]),
                                         PERMISSION_REQUEST_CODE);
                             }
                         })
-                        .setNegativeButton("不同意", null)
+                        .setNegativeButton("Disagree", null)
                         .create()
                         .show();
             } else {
@@ -116,13 +116,13 @@ public class LoginActivity extends AppCompatActivity {
     private void check() {
         mAccountStr = mAccount.getText().toString();
         if (TextUtils.isEmpty(mAccountStr)) {
-            mAccount.setError("请输入手机号");
+            mAccount.setError("Please enter your phone number");
             return;
         }
 
         mPasswordStr = mPassword.getText().toString();
         if (TextUtils.isEmpty(mPasswordStr)) {
-            mPassword.setError("请输入密码");
+            mPassword.setError("Please input a password");
             return;
         }
         checkPermissions();
@@ -130,7 +130,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void login(final String account, final String password) {
-        mProgressDialog.setMessage("正在登录");
+        mProgressDialog.setMessage("Logging in");
         mProgressDialog.show();
         new Thread(new Runnable() {
             @Override
@@ -170,6 +170,6 @@ public class LoginActivity extends AppCompatActivity {
     private void loginError() {
         if (!isFinishing())
             mProgressDialog.dismiss();
-        Toast.makeText(this, "登录失败", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Login failed", Toast.LENGTH_SHORT).show();
     }
 }

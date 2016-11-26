@@ -28,7 +28,7 @@
             android:layout_marginLeft="10dp"
             android:textSize="24sp"
             android:textColor="@android:color/white"
-            android:text="智慧健康管理"/>
+            android:text="Intelligent health management"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -36,7 +36,7 @@
             android:gravity="right"
             android:textSize="26sp"
             android:textColor="@android:color/white"
-            android:text="沃博科技"/>
+            android:text="ROBO Technology"/>
     </LinearLayout>
 
     <FrameLayout
@@ -59,7 +59,7 @@
             <!--android:layout_width="wrap_content"-->
             <!--android:layout_height="wrap_content"-->
             <!--android:textSize="20sp"-->
-            <!--android:text="武汉沃博软件提供服务 服务热线 027-88880000"-->
+            <!--android:text="Wuhan ROBO software services hotline 027-88880000"-->
             <!--android:textColor="@android:color/black"/>-->
     <!--</LinearLayout>-->
 

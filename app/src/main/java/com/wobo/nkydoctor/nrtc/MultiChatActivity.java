@@ -111,25 +111,25 @@ public class MultiChatActivity extends NRtcActivity implements NRtcCallback, Vie
             menu.setHeaderTitle(user.uid + "");
 
             if (user.uid == uid) {
-                menu.add(0, MENU_QUIT, Menu.NONE, "离开会话");
+                menu.add(0, MENU_QUIT, Menu.NONE, "Leave conversation");
 
                 if (nrtc.getRole() == NRtcConstants.UserRole.AUDIENCE) {
-                    menu.add(0, MENU_ROLE, Menu.NONE, "切换为普通用户");
+                    menu.add(0, MENU_ROLE, Menu.NONE, "Switch to ordinary users");
                     return;
                 } else {
-                    menu.add(0, MENU_ROLE, Menu.NONE, "切换为观众用户");
+                    menu.add(0, MENU_ROLE, Menu.NONE, "Switch to audience");
                 }
 
                 if (isCallEstablished) {
 
                     if (videoEnabled) {
                         if (nrtc.hasMultipleCameras()) {
-                            menu.add(0, MENU_SWITCH_CAMERA, Menu.NONE, "切换摄像头");
+                            menu.add(0, MENU_SWITCH_CAMERA, Menu.NONE, "Switch camera");
                         }
-                        menu.add(0, MENU_VIDEO_MUTED, Menu.NONE, nrtc.videoStreamMuted(uid) ? "打开视频发送" : "关闭视频发送");
+                        menu.add(0, MENU_VIDEO_MUTED, Menu.NONE, nrtc.videoStreamMuted(uid) ? "Open video send" : "Turn off video");
                     }
-                    menu.add(0, MENU_AUDIO_MUTED, Menu.NONE, nrtc.audioStreamMuted(user.uid) ? "打开语音发送" : "关闭语音发送");
-                    menu.add(0, MENU_RECORD, Menu.NONE, nrtc.isLocalRecording() ? "关闭录制" : "打开录制");
+                    menu.add(0, MENU_AUDIO_MUTED, Menu.NONE, nrtc.audioStreamMuted(user.uid) ? "Open voice send" : "Stop voice transmission");
+                    menu.add(0, MENU_RECORD, Menu.NONE, nrtc.isLocalRecording() ? "Stop recording" : "Open recording");
                 }
 
 
@@ -137,9 +137,9 @@ public class MultiChatActivity extends NRtcActivity implements NRtcCallback, Vie
 
                 if (isCallEstablished) {
                     if (videoEnabled) {
-                        menu.add(0, MENU_VIDEO_MUTED, Menu.NONE, nrtc.videoStreamMuted(user.uid) ? "打开视频接收" : "关闭视频接收");
+                        menu.add(0, MENU_VIDEO_MUTED, Menu.NONE, nrtc.videoStreamMuted(user.uid) ? "Open video reception" : "Stop video receiving");
                     }
-                    menu.add(0, MENU_AUDIO_MUTED, Menu.NONE, nrtc.audioStreamMuted(user.uid) ? "打开语音接收" : "关闭语音接收");
+                    menu.add(0, MENU_AUDIO_MUTED, Menu.NONE, nrtc.audioStreamMuted(user.uid) ? "Open voice reception" : "Stop voice receiving");
                 }
 
             }
@@ -148,16 +148,16 @@ public class MultiChatActivity extends NRtcActivity implements NRtcCallback, Vie
             if (videoEnabled && isCallEstablished) {
 
                 if (selectedRenderUid == 0) {
-                    menu.add(0, MENU_SELECTED, Menu.NONE, "选中用户");
+                    menu.add(0, MENU_SELECTED, Menu.NONE, "Selected user");
                 } else {
                     if (selectedRenderUid == user.uid) {
-                        menu.add(0, MENU_SELECTED, Menu.NONE, "取消选中");
+                        menu.add(0, MENU_SELECTED, Menu.NONE, "uncheck");
                     } else {
-                        menu.add(0, MENU_SWITCH_RENDER, Menu.NONE, "交换布局");
+                        menu.add(0, MENU_SWITCH_RENDER, Menu.NONE, "Exchange layout");
                     }
                 }
 
-                menu.add(0, MENU_SNAPSHOT, Menu.NONE, "截图");
+                menu.add(0, MENU_SNAPSHOT, Menu.NONE, "screenshot");
             }
 
         }
@@ -388,13 +388,13 @@ public class MultiChatActivity extends NRtcActivity implements NRtcCallback, Vie
                         refreshHolder(user.holder, false);
                     }
                 }
-                speakerBtn.setText(isMute ? "开声音" : "关声音");
+                speakerBtn.setText(isMute ? "Open sound" : "Mute");
             }
             break;
             case R.id.switch_microphone: {
                 //改变自己声音状态
                 nrtc.muteAudioStream(uid,!nrtc.audioStreamMuted(uid));
-                microphoneBtn.setText(nrtc.audioStreamMuted(uid) ? "开麦" : "关麦");
+                microphoneBtn.setText(nrtc.audioStreamMuted(uid) ? "Start talking" : "Voice off");
 
                 User user = findUser(uid);
                 user.audioMuted = nrtc.audioStreamMuted(user.uid);

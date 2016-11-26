@@ -85,13 +85,13 @@ public class SettingsFragment extends PreferenceFragment implements Preference.O
                     findPreference(getString(R.string.setting_vie_hw_encoder_key)).setEnabled(false);
                     break;
                 case 0:
-                    findPreference(getString(R.string.setting_vie_hw_encoder_key)).setSummary("自动");
+                    findPreference(getString(R.string.setting_vie_hw_encoder_key)).setSummary("automatic");
                     break;
                 case 1:
-                    findPreference(getString(R.string.setting_vie_hw_encoder_key)).setSummary("软件");
+                    findPreference(getString(R.string.setting_vie_hw_encoder_key)).setSummary("Software");
                     break;
                 case 2:
-                    findPreference(getString(R.string.setting_vie_hw_encoder_key)).setSummary("硬件");
+                    findPreference(getString(R.string.setting_vie_hw_encoder_key)).setSummary("Hardware");
                     break;
             }
 
@@ -100,13 +100,13 @@ public class SettingsFragment extends PreferenceFragment implements Preference.O
                     findPreference(getString(R.string.setting_vie_hw_decoder_key)).setEnabled(false);
                     break;
                 case 0:
-                    findPreference(getString(R.string.setting_vie_hw_decoder_key)).setSummary("自动");
+                    findPreference(getString(R.string.setting_vie_hw_decoder_key)).setSummary("automatic");
                     break;
                 case 1:
-                    findPreference(getString(R.string.setting_vie_hw_decoder_key)).setSummary("软件");
+                    findPreference(getString(R.string.setting_vie_hw_decoder_key)).setSummary("Software");
                     break;
                 case 2:
-                    findPreference(getString(R.string.setting_vie_hw_decoder_key)).setSummary("硬件");
+                    findPreference(getString(R.string.setting_vie_hw_decoder_key)).setSummary("Hardware");
                     break;
             }
 

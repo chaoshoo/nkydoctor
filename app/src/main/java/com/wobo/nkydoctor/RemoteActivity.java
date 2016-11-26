@@ -100,15 +100,15 @@ public class RemoteActivity extends AppCompatActivity {
 //                Toast.makeText(RemoteActivity.this,"点我干嘛",Toast.LENGTH_SHORT).show();
                 mSelectRemote = mRemoteList.get(position);
                 if ("2".equals(mSelectRemote.getIszd())) {
-                    Toast.makeText(RemoteActivity.this, "此条咨询已被拒绝", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RemoteActivity.this, "This request has been rejected.", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if ("2".equals(mSelectRemote.getIsdeal())) {
-                    Toast.makeText(RemoteActivity.this, "此条咨询已被拒绝", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RemoteActivity.this, "This request has been rejected.", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if ("1".equals(mSelectRemote.getIsdeal())) {
-                    Toast.makeText(RemoteActivity.this, "此条咨询已视频过", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RemoteActivity.this, "This video request has been processed", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 getToken();
@@ -121,7 +121,7 @@ public class RemoteActivity extends AppCompatActivity {
 
     private void loadError() {
         mProgressDialog.dismiss();
-        Toast.makeText(this,"数据加载失败",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Data loading failed",Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -130,7 +130,7 @@ public class RemoteActivity extends AppCompatActivity {
     }
 
     private void getRemoteList() {
-        mProgressDialog.setMessage("正在获取数据");
+        mProgressDialog.setMessage("Retrieving data");
         mProgressDialog.show();
         new Thread(new Runnable() {
             @Override
@@ -155,7 +155,7 @@ public class RemoteActivity extends AppCompatActivity {
                                 mProgressDialog.dismiss();
                             }
                             if (mRemoteList.isEmpty()) {
-                                Toast.makeText(RemoteActivity.this,"暂无远程咨询数据",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(RemoteActivity.this,"No remote consultation data",Toast.LENGTH_SHORT).show();
                                 return;
                             }
                             mRemoteAdapter.notifyDataSetChanged();
@@ -176,7 +176,7 @@ public class RemoteActivity extends AppCompatActivity {
     }
 
     private void getToken() {
-        mProgressDialog.setMessage("正在连接服务器");
+        mProgressDialog.setMessage("Connecting server");
         mProgressDialog.show();
         new Thread(new Runnable() {
             @Override
@@ -197,7 +197,7 @@ public class RemoteActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         mProgressDialog.dismiss();
-                        Toast.makeText(RemoteActivity.this,"Token获取失败",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RemoteActivity.this,"TokenAcquisition failed",Toast.LENGTH_SHORT).show();
                     }
                 });
             }
@@ -248,7 +248,7 @@ public class RemoteActivity extends AppCompatActivity {
             @Override
             public void run() {
                 mProgressDialog.dismiss();
-                Toast.makeText(RemoteActivity.this,"房间创建失败",Toast.LENGTH_SHORT).show();
+                Toast.makeText(RemoteActivity.this,"Room creation failed",Toast.LENGTH_SHORT).show();
             }
         });
 //        new Thread(new Runnable() {

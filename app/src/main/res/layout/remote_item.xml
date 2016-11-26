@@ -17,7 +17,7 @@
         android:gravity="center_vertical"
         android:textSize="16sp"
         android:textColor="@android:color/white"
-        android:text="预约医生：程医生\n预约时间：2016/08/26 17:00:00"/>
+        android:text="make an appointment：Cheng doctor\nAppointment time：2016/08/26 17:00:00"/>
 
     <View
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
         android:layout_marginTop="10dp"
         android:textSize="14sp"
         android:textColor="@android:color/white"
-        android:text="预约备注：\n点击否还好的失事客机灰色空间地方还记得发货快收到货副书记等符合会计师的疯狂"/>
+        android:text="Appointment notes：\nClick no better crash aircraft gray space where the delivery of the goods will soon receive the Deputy Secretary of the party, such as the crazy"/>
 
     <View
         android:layout_width="match_parent"
@@ -47,7 +47,7 @@
         android:layout_marginTop="10dp"
         android:textSize="14sp"
         android:textColor="@android:color/white"
-        android:text="状态："/>
+        android:text="state："/>
 
 
 </LinearLayout>

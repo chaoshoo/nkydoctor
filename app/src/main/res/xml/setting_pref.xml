@@ -8,13 +8,13 @@
         <SwitchPreference
             android:defaultValue="true"
             android:key="@string/setting_voe_call_proximity_key"
-            android:summary="在语音通话时开启距离传感器"
+            android:summary="Open distance sensor in voice call"
             android:title="@string/setting_voe_call_proximity" />
 
         <SwitchPreference
             android:defaultValue="false"
             android:key="@string/setting_voe_report_speaker_key"
-            android:summary="在通话时实时汇报正在说话的用户"
+            android:summary="Report to the user in real time while talking."
             android:title="@string/setting_voe_report_speaker" />
 
         <ListPreference
@@ -45,25 +45,25 @@
         <SwitchPreference
             android:defaultValue="false"
             android:key="@string/setting_vie_crop_key"
-            android:summary="在双人通话时按照对方屏幕比例裁剪画面"
+            android:summary="In a double talk when the screen according to the other side of the screen"
             android:title="@string/setting_vie_crop" />
 
         <SwitchPreference
             android:defaultValue="true"
             android:key="@string/setting_vie_rotation_key"
-            android:summary="通话时参考自己和对方设备角度旋转画面"
+            android:summary="Refer to their own and other equipment angle rotation screen"
             android:title="@string/setting_vie_rotation" />
 
         <SwitchPreference
             android:defaultValue="true"
             android:key="@string/setting_vie_default_front_camera_key"
-            android:summary="在视频通话时优先采用前置摄像头"
+            android:summary="In video call priority use of the front camera"
             android:title="@string/setting_vie_default_front_camera" />
 
         <SwitchPreference
             android:defaultValue="true"
             android:key="@string/setting_vie_fps_reported_key"
-            android:summary="在视频通话时是否汇报帧率"
+            android:summary="Whether the report frame rate video call"
             android:title="@string/setting_vie_fps_reported" />
 
         <EditTextPreference
@@ -115,7 +115,7 @@
         <SwitchPreference
             android:defaultValue="false"
             android:key="@string/setting_live_status_key"
-            android:summary="在多人模式下进行直播推流"
+            android:summary="In the multiplayer mode to live streaming"
             android:title="@string/setting_live_status" />
 
         <EditTextPreference
@@ -131,7 +131,7 @@
         <SwitchPreference
             android:defaultValue="false"
             android:key="@string/setting_net_proxy_key"
-            android:summary="使用网络代理(SOCKS5)"
+            android:summary="Using network agents(SOCKS5)"
             android:title="@string/setting_net_proxy" />
 
         <EditTextPreference
@@ -178,13 +178,13 @@
         <SwitchPreference
             android:defaultValue="false"
             android:key="@string/setting_other_server_record_audio_key"
-            android:summary="在服务器录制通话内容(需要额外配置)"
+            android:summary="Recording call content on the server(Additional configuration required)"
             android:title="@string/setting_other_server_record_audio" />
 
         <SwitchPreference
             android:defaultValue="false"
             android:key="@string/setting_other_server_record_video_key"
-            android:summary="在服务器录制通话内容(需要额外配置)"
+            android:summary="Recording call content on the server(Additional configuration required)"
             android:title="@string/setting_other_server_record_video" />
 
     </PreferenceCategory>
